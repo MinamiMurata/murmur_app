@@ -1,0 +1,10 @@
+<h3>Post with this content.</h3>
+
+<%= form_with(model: @post, url: posts_path, local: true) do |form| %>
+  <%= form.hidden_field :content %>
+
+  <p>Content:<%= @post.content %></p>
+  <%= form.submit "Confirm" %>
+
+<%= form.submit "Back.", name: 'back' %>
+<% end %>
