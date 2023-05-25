@@ -15,7 +15,7 @@ class PostsController < ApplicationController
       render :new
     else
       if @post.save
-        redirect_to posts_path, notice: "Received your murmur!"
+        redirect_to posts_path, notice: "Received your murmur! Keep it up!"
       else
         render :new
       end
